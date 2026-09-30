@@ -65,15 +65,15 @@
         <i data-lucide="phone-call" class="w-5 h-5"></i> 預約工區現場測試 (POC)
       </a>
       <a href="#compliance" class="border border-brand-border bg-brand-card font-semibold px-8 py-3.5 rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
-        檢視完整標案法規對照
+        檢視 9 大標案法規對照
       </a>
     </div>
   </section>
 
-  <!-- 法規符合性與計畫書請款對照 Compliance Section -->
+  <!-- 法規符合性與計畫書請款對照 Compliance Section (9大卡片) -->
   <section id="compliance" class="py-20 bg-slate-900/40 border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="text-brand-yellow font-bold text-sm tracking-widest uppercase">完整法規合規與安衛計畫書送審</span>
         <h2 class="text-3xl font-bold text-white mt-2 mb-4">精準命中職安法規與標案要求，請款核銷有據</h2>
         <p class="text-slate-400 text-sm">
@@ -81,106 +81,189 @@
         </p>
       </div>
 
+      <!-- 可核銷安衛科目提示條 -->
+      <div class="bg-brand-card border border-brand-border rounded-xl p-4 mb-10 max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs">
+        <div class="flex items-center gap-2 text-brand-yellow font-bold">
+          <i data-lucide="banknote" class="w-4 h-4"></i>
+          <span>可直接列支核銷之工程預算科目：</span>
+        </div>
+        <div class="flex flex-wrap gap-2 text-slate-300">
+          <span class="bg-slate-800 px-2.5 py-1 rounded border border-slate-700">科技化安全衛生管理設備費</span>
+          <span class="bg-slate-800 px-2.5 py-1 rounded border border-slate-700">高處防墜設施安全管理費</span>
+          <span class="bg-slate-800 px-2.5 py-1 rounded border border-slate-700">自動化門禁與安衛教育查驗費</span>
+          <span class="bg-slate-800 px-2.5 py-1 rounded border border-slate-700">局限空間作業危害防護費</span>
+        </div>
+      </div>
+
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- 法規卡片 1: 墜落防護 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              設施規則第 281 條
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                設施規則第 281 條
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">高處作業與開口墜落防護</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              高度 2 公尺以上之開口、樓板邊緣、深開挖區，勞工有墜落之虞者應設置護欄並使勞工確實使用防墜裝備。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">高處作業與開口墜落防護</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            法令規定：高度 2 公尺以上之開口、樓板邊緣、深開挖區，勞工有墜落之虞者應設置護欄並使勞工確實使用防墜裝備。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
             <strong>SafeEdge 命中功能：</strong>AI 虛擬電子圍籬即刻鎖定開口、露台邊緣與施工架警戒區，違規越界毫秒級聲光通報。
           </div>
         </div>
 
-        <!-- 法規卡片 2: 機具盲區 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              設施規則第 116 / 128 條
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <!-- 法規卡片 2: 機具迴轉盲區 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                設施規則第 116 / 128 條
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">營建機具迴轉盲區與防撞</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              怪手、吊車等車輛系營建機械作業時，禁止人員進入操作半徑或盲區，並應有引導人員或警報裝置防止撞擊。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">營建機具迴轉盲區與防撞</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            法令規定：怪手、吊車等車輛系營建機械作業時，禁止人員進入操作半徑或盲區，並應有引導人員或警報裝置防止撞擊。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
-            <strong>SafeEdge 命中功能：</strong>重機具操作半徑動態虛擬警戒圈，人員誤入盲區立即跳脫繼電器驅動車外/現場大分貝警笛。
+            <strong>SafeEdge 命中功能：</strong>重機具操作半徑動態虛擬警戒圈，人員誤入盲區立即跳脫繼電器驅動現場大分貝警笛。
           </div>
         </div>
 
         <!-- 法規卡片 3: PPE 穿戴 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              營造標準第 11-1 條
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                營造標準第 11-1 條
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">個人防護具 (PPE) 穿戴合規</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              進入營造工地工作場所，勞工應正確配戴符合國家標準之安全帽及合適反光背心等必要防護裝備。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">個人防護具 (PPE) 穿戴合規</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            法令規定：進入營造工地工作場所，勞工應正確配戴符合國家標準之安全帽及合適反光背心等必要防護裝備。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
             <strong>SafeEdge 命中功能：</strong>管制門口高速視覺巡檢，未依規範戴帽、穿著反光背心即時標註存證並推播管理人員。
           </div>
         </div>
 
         <!-- 法規卡片 4: 門禁與教育訓練管制 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              職安法第 27 條 / 作業要點第 8 點
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                職安法第 27 條 / 作業要點第 8 點
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">承攬作業門禁與職安卡驗證</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              各級承攬人共同作業應落實門禁管制，進場勞工必須具備合格安衛教育訓練（台灣職安卡 6 小時受訓合格）。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">承攬共同作業門禁與資格查驗</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            法令規定：各級承攬人共同作業應落實門禁管制，進場勞工必須具備合格安衛教育訓練（台灣職安卡受訓合格證明）。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
             <strong>SafeEdge 命中功能：</strong>人臉比對自動連結合格工班名冊，未受訓或未建檔之陌生外人進入立即紅框抓拍告警。
           </div>
         </div>
 
         <!-- 法規卡片 5: 工程會科技防災指引 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              公共工程安衛作業要點第 13 點
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                公共工程安衛作業要點第 13 點
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">科技化安全衛生監控機制</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              公共工程標案應積極編列智慧科技防災經費，藉由自動化影像監控與即時通知設備輔助現場巡檢。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">科技化安全衛生監控機制</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            規範要求：公共工程標案應積極編列智慧科技防災經費，藉由自動化影像監控與即時通知設備輔助現場巡檢。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
             <strong>SafeEdge 命中功能：</strong>全自動縮時攝影、LINE 圖文推播與一鍵匯出違規週報，完整具備科技防災實質驗收規格。
           </div>
         </div>
 
         <!-- 法規卡片 6: 資安與不可信設備 -->
-        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
-          <div class="flex items-center justify-between mb-4">
-            <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
-              政府採購資安非陸資規範
-            </span>
-            <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                政府採購資安非陸資規範
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">政府採購資安與隱私切結</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              公有工程機電與監控標案，設備不得使用大陸品牌，影像與施工機敏資料不得傳輸至境內外不可信雲端。
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">政府採購資安與隱私切結</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">
-            法令規定：公有工程機電與監控標案，設備不得使用大陸品牌，影像與施工機敏資料不得傳輸至境內外不可信雲端。
-          </p>
           <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
             <strong>SafeEdge 命中功能：</strong>全台廠工規硬體架構，影像完全在本地電箱內推論，零公有雲儲存，安心簽立切結書。
+          </div>
+        </div>
+
+        <!-- 法規卡片 7: 局限空間作業 (新增) -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                設施規則第 19 條之 1
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">局限空間缺氧與危害防護</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              蓄水池、地下管道、深開挖井等局限空間作業，應實施人員出入許可管制，嚴防非許可人員誤入發生窒息職災。
+            </p>
+          </div>
+          <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
+            <strong>SafeEdge 命中功能：</strong>局限空間出入口精準人臉身分查核，未獲簽核人員靠近開口即刻聲光警報阻擋。
+          </div>
+        </div>
+
+        <!-- 法規卡片 8: 車輛動線與倒車盲區 (新增) -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                設施規則第 224 條
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">車輛行駛與倒車死角防撞</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              砂石車、壓路機等車輛進出工區或倒車作業時，應設置引導標誌，並防止人員進入倒車視線死角引發輾壓意外。
+            </p>
+          </div>
+          <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
+            <strong>SafeEdge 命中功能：</strong>在出土動線與倒車熱區動態劃設安全隔離區，行人靠近車尾立即自動觸發警笛示警。
+          </div>
+        </div>
+
+        <!-- 法規卡片 9: 露天開挖與崩塌防範 (新增) -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-amber-500/10 text-brand-yellow font-mono text-xs font-bold border border-amber-500/20">
+                營造標準第 20 條
+              </span>
+              <i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">露天開挖與邊坡落石警戒</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              開挖面、擋土支撐及邊坡下方易發生落石土石崩塌場所，非必要人員嚴禁滯留或接近作業面。
+            </p>
+          </div>
+          <div class="text-xs bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-brand-yellow">
+            <strong>SafeEdge 命中功能：</strong>AI 邊界鎖定深開挖土石易崩落帶，人員非法滯留開挖垂直面下方即刻抓拍並驅離。
           </div>
         </div>
       </div>
