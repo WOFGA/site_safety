@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SafeEdge AI | 營造與公共工程科技勞安邊緣辨識防護系統</title>
+  <title>SafeEdge AI | 營造與公共工程科技勞安邊緣防護系統</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -36,7 +36,7 @@
       </div>
       <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
         <a href="#features" class="hover:text-brand-yellow transition">核心功能</a>
-        <a href="#architecture" class="hover:text-brand-yellow transition">硬體架構</a>
+        <a href="#architecture" class="hover:text-brand-yellow transition">防護架構</a>
         <a href="#pricing" class="hover:text-brand-yellow transition">方案定價</a>
       </nav>
       <a href="https://line.me/R/ti/p/@927njlnq" target="_blank" 
@@ -50,7 +50,7 @@
   <!-- 主視覺 Hero Section -->
   <section class="py-20 px-6 max-w-7xl mx-auto text-center">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-brand-yellow text-xs font-semibold uppercase tracking-wider mb-6">
-      <i data-lucide="cpu" class="w-3.5 h-3.5"></i> 符合職安署科技防災規範 • 邊緣推論零雲端月租負擔
+      <i data-lucide="cpu" class="w-3.5 h-3.5"></i> 符合職安署科技防災規範 • 邊緣自主運算免雲端連線費用
     </div>
     <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
       工地勞安防護的最後一哩路<br>
@@ -64,7 +64,7 @@
         <i data-lucide="phone-call" class="w-5 h-5"></i> 預約工區現場測試 (POC)
       </a>
       <a href="#features" class="border border-brand-border bg-brand-card font-semibold px-8 py-3.5 rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
-        查看完整規格清單
+        查看完整防護矩陣
       </a>
     </div>
   </section>
@@ -85,7 +85,7 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-2">門禁管制人臉辨識</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            支援多照片平均特徵建檔，強光與側臉高精準比對。未登記陌生人員進入管制區立即紅框抓拍。
+            支援多角度特徵整合建檔，強光與側臉精準比對。未登記陌生人員進入管制區立即紅框抓拍。
           </p>
         </div>
 
@@ -118,18 +118,18 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-2">環境危害與氣象預警</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            整合氣象局熱危害指標、強風停工警戒與河川警戒水位 API，現場危險條件成立時主動警示。
+            整合中央氣象資料熱危害指標、強風停工警戒與河川警戒水位，現場危險條件成立時主動警示。
           </p>
         </div>
 
-        <!-- 5. PPE 配戴辨識 -->
+        <!-- 5. PPE 配戴辨識 (已優化用詞) -->
         <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
           <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
             <i data-lucide="hard-hat" class="w-6 h-6"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">安全帽／反光背心檢測</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            YOLO 高速邊緣辨識，即時抓拍未正確配戴安全帽或穿著背心之作業人員，通報管理員現場制止。
+            工規高幀率視覺辨識引擎，即時抓拍未正確配戴安全帽或穿著背心之作業人員，通報現場巡檢制止。
           </p>
         </div>
 
@@ -140,18 +140,18 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-2">重型機具迴轉半徑警示</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            針對怪手、大吊車迴轉範圍劃設危險邊界，行人誤入盲區立即觸發大分貝警笛，防止車輛碰撞。
+            針對怪手、大吊車迴轉範圍劃設動態危險邊界，人員誤入盲區立即觸發大分貝警笛，防止車輛碰撞。
           </p>
         </div>
 
-        <!-- 7. 現場硬體連動 -->
+        <!-- 7. 現場硬體連動 (已優化用詞) -->
         <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
           <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
             <i data-lucide="siren" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">ESP32 繼電器聲光鳴笛</h3>
+          <h3 class="text-xl font-bold text-white mb-2">現場硬體聲光聯動警報</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            PoE 供電硬體繼電器模組，辨識違規即刻觸發 110V/220V 現場旋轉警報燈與大音量蜂鳴器。
+            工規隔離型繼電器輸出控制，辨識違規即刻驅動 110V/220V 現場防爆旋轉警報燈與大音量蜂鳴器。
           </p>
         </div>
 
@@ -179,19 +179,19 @@
           <ul class="space-y-4 text-slate-300 text-sm">
             <li class="flex items-start gap-3">
               <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span><strong>非陸資台廠設備相容：</strong>支援 BSMI 認證工業網通與 PoE 設備，安心通過公共工程資安審查。</span>
+              <span><strong>非陸資台廠設備相容：</strong>支援 BSMI 認證工業網通與 PoE 供電架構，安心通過公共工程資安審查。</span>
             </li>
             <li class="flex items-start gap-3">
               <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span><strong>本機邊緣推論（Local Edge）：</strong>影像完全存於現場 Mini PC，隱私不外流，零雲端運算高額流量費。</span>
+              <span><strong>本機邊緣自持運算：</strong>影像完全封閉於現場主機，隱私不外流，免除雲端巨額頻寬與租用費用。</span>
             </li>
             <li class="flex items-start gap-3">
               <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span><strong>AC 斷電自動重啟：</strong>工地臨時跳電復電後，BIOS + Windows Task 自動重啟服務，無須派工重開。</span>
+              <span><strong>斷電自癒防護機制：</strong>工區遇臨時跳電復電後，硬體自動喚醒並載入全套防護服務，無須派工重開。</span>
             </li>
             <li class="flex items-start gap-3">
               <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
-              <span><strong>LINE 雙重通報：</strong>事件文字細節 + 紅綠框標註抓拍原圖直傳手機，不用登入雜訊龐大的 App。</span>
+              <span><strong>LINE 雙重通報機制：</strong>通報文字明細與現場彩色抓拍標註存證秒級直送手機，不漏接任何違規。</span>
             </li>
           </ul>
         </div>
@@ -201,14 +201,14 @@
           </div>
           <h4 class="text-lg font-bold text-white mb-2">隨插即用一體化防護電箱</h4>
           <p class="text-slate-400 text-xs mb-6 leading-relaxed">
-            內建 Mini PC 運算核心 + ESP32 繼電器控制器 + PoE 供電交換機 + 4G 工業路由器。現場僅需供電 110V/220V 與相機網路線即可運作。
+            內建工業級邊緣運算核心 + 工規隔離控制器 + 網路供電交換模組 + 工業行動網關。現場僅需供電 110V/220V 與相機網路線即可運作。
           </p>
           <div class="text-left text-xs bg-slate-900 p-4 rounded-lg font-mono text-slate-400 space-y-1">
-            <div class="text-amber-400">[Pipeline Status]</div>
-            <div>➔ IP Camera (Snapshot / RTSP) -> Ready</div>
-            <div>➔ Edge AI Inference (InsightFace / YOLO) -> 640x640 Active</div>
-            <div>➔ ESP32-S3-PoE Relay Server -> Connected</div>
-            <div>➔ LINE Push Messaging Gateway -> Online</div>
+            <div class="text-amber-400">[系統狀態監控中]</div>
+            <div>➔ 工業監控攝影機 (高清即時影像串流) -> 正常連線</div>
+            <div>➔ 工規邊緣視覺推論引擎 (勞安防護模型) -> 運作中</div>
+            <div>➔ 現場隔離式硬體警報控制模組 -> 隨時待命</div>
+            <div>➔ LINE 行動通報推播閘道 -> 線上連線</div>
           </div>
         </div>
       </div>
@@ -240,7 +240,7 @@
               <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 標準防雨 AI 邊緣辨識電箱租用</li>
               <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 人臉辨識門禁 + 電子圍籬功能全開</li>
               <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> LINE 圖文告警推播（不限綁定人數）</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 4G 工業網卡流量全包</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 工規行動網卡連線流量全包</li>
               <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 每週自動產出科技勞檢違規週報</li>
             </ul>
           </div>
@@ -260,9 +260,9 @@
             </div>
             <ul class="space-y-3 text-sm text-slate-300 mb-8">
               <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 全套工業級電箱主機設備買斷</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 客製化辨識模型部署（怪手/高處/特定設備）</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 本地區網 API 介接企業內部 ERP/門禁</li>
-              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 一年硬體保固與遠端 OTA 升級服務</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 客製化特定高風險場域防護模型部署</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 本地區網介接企業內部管理與門禁系統</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 一年硬體保固與遠端系統維護升級服務</li>
             </ul>
           </div>
           <a href="https://line.me/R/ti/p/@927njlnq" target="_blank" class="w-full border border-brand-border bg-slate-800 text-white font-bold py-3 rounded-xl hover:bg-slate-700 transition text-center block">
