@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeEdge AI | 營造與公共工程科技勞安邊緣辨識防護系統</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              card: '#1E293B',
+              border: '#334155'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased">
+
+  <!-- 導航列 -->
+  <header class="border-b border-brand-border sticky top-0 bg-brand-dark/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2 font-bold text-xl tracking-wider text-white">
+        <i data-lucide="shield-alert" class="text-brand-yellow w-7 h-7"></i>
+        <span>SafeEdge <span class="text-brand-yellow">AI</span></span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <a href="#features" class="hover:text-brand-yellow transition">核心功能</a>
+        <a href="#architecture" class="hover:text-brand-yellow transition">硬體架構</a>
+        <a href="#pricing" class="hover:text-brand-yellow transition">方案定價</a>
+      </nav>
+      <a href="https://line.me/ti/p/@你的LINE官方帳號" target="_blank" 
+         class="bg-brand-yellow text-slate-900 font-bold px-4 py-2 rounded-lg text-sm hover:bg-amber-400 transition flex items-center gap-2 shadow-lg shadow-amber-500/10">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>LINE 立即洽詢</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 主視覺 Hero Section -->
+  <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-brand-yellow text-xs font-semibold uppercase tracking-wider mb-6">
+      <i data-lucide="cpu" class="w-3.5 h-3.5"></i> 符合職安署科技防災規範 • 邊緣推論零雲端月租負擔
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+      工地勞安防護的最後一哩路<br>
+      <span class="text-brand-yellow">AI 邊緣辨識 ✕ 現場聲光警報 ✕ LINE 即時推播</span>
+    </h1>
+    <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10">
+      專為公共工程、建築工地打造的隨插即用科技勞安電箱。現場微秒級判定，離線狀態也能蜂鳴嚇阻，讓工地主任第一時間掌握違規現場存證。
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://line.me/ti/p/@你的LINE官方帳號" class="bg-brand-yellow text-slate-900 font-bold px-8 py-3.5 rounded-xl hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+        <i data-lucide="phone-call" class="w-5 h-5"></i> 預約工區現場測試 (POC)
+      </a>
+      <a href="#features" class="border border-brand-border bg-brand-card font-semibold px-8 py-3.5 rounded-xl hover:bg-slate-800 transition flex items-center justify-center gap-2">
+        查看完整規格清單
+      </a>
+    </div>
+  </section>
+
+  <!-- 核心功能 Matrix -->
+  <section id="features" class="py-20 bg-slate-900/50 border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-white mb-4">全面符合工安查核的核心防護功能</h2>
+        <p class="text-slate-400">模組化設計，可依案場進度靈活切換辨識任務，兼顧開工安衛申報與日常預防。</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1. 人臉辨識 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="scan-face" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">門禁管制人臉辨識</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            支援多照片平均特徵建檔，強光與側臉高精準比對。未登記陌生人員進入管制區立即紅框抓拍。
+          </p>
+        </div>
+
+        <!-- 2. 電子圍籬 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="fence" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">AI 虛擬電子圍籬</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            自由劃設開口危險區、深開挖區與吊裝半徑。人員越界毫秒級判定，杜絕高處墜落及壓砸事故。
+          </p>
+        </div>
+
+        <!-- 3. 縮時攝影與工程存證 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="film" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">工程全紀錄縮時攝影</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            定時擷取超高解析度快照，自動串連月度施工進度縮時影片，業主查核、月會簡報直接可用。
+          </p>
+        </div>
+
+        <!-- 4. IoT 氣象與環境整合 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="cloud-sun-rain" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">環境危害與氣象預警</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            整合氣象局熱危害指標、強風停工警戒與河川警戒水位 API，現場危險條件成立時主動警示。
+          </p>
+        </div>
+
+        <!-- 5. PPE 配戴辨識 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">安全帽／反光背心檢測</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            YOLO 高速邊緣辨識，即時抓拍未正確配戴安全帽或穿著背心之作業人員，通報管理員現場制止。
+          </p>
+        </div>
+
+        <!-- 6. 機具迴轉盲區警戒 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">重型機具迴轉半徑警示</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            針對怪手、大吊車迴轉範圍劃設危險邊界，行人誤入盲區立即觸發大分貝警笛，防止車輛碰撞。
+          </p>
+        </div>
+
+        <!-- 7. 現場硬體連動 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="siren" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">ESP32 繼電器聲光鳴笛</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            PoE 供電硬體繼電器模組，辨識違規即刻觸發 110V/220V 現場旋轉警報燈與大音量蜂鳴器。
+          </p>
+        </div>
+
+        <!-- 8. 自動產出工安週報 -->
+        <div class="bg-brand-card p-6 rounded-2xl border border-brand-border hover:border-brand-yellow/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-brand-yellow mb-5">
+            <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">科技勞檢週報自動匯出</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            違規時間分佈、影像存證與次數統計一鍵產出 PDF/Excel，輕鬆滿足勞動檢查與安衛評鑑要求。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 架構說明 System Architecture -->
+  <section id="architecture" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="bg-brand-card border border-brand-border rounded-3xl p-8 md:p-12">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-brand-yellow font-bold text-sm tracking-widest uppercase">系統核心優勢</span>
+          <h2 class="text-3xl font-extrabold text-white mt-2 mb-6">離線自持推論，斷網依舊維持防護</h2>
+          <ul class="space-y-4 text-slate-300 text-sm">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
+              <span><strong>非陸資台廠設備相容：</strong>支援 BSMI 認證工業網通與 PoE 設備，安心通過公共工程資安審查。</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
+              <span><strong>本機邊緣推論（Local Edge）：</strong>影像完全存於現場 Mini PC，隱私不外流，零雲端運算高額流量費。</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
+              <span><strong>AC 斷電自動重啟：</strong>工地臨時跳電復電後，BIOS + Windows Task 自動重啟服務，無須派工重開。</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="text-brand-yellow w-5 h-5 flex-shrink-0 mt-0.5"></i>
+              <span><strong>LINE 雙重通報：</strong>事件文字細節 + 紅綠框標註抓拍原圖直傳手機，不用登入雜訊龐大的 App。</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-brand-dark/80 p-6 rounded-2xl border border-brand-border text-center">
+          <div class="inline-block p-4 rounded-xl bg-amber-500/10 text-brand-yellow mb-4">
+            <i data-lucide="box" class="w-12 h-12 mx-auto"></i>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">隨插即用一體化防護電箱</h4>
+          <p class="text-slate-400 text-xs mb-6 leading-relaxed">
+            內建 Mini PC 運算核心 + ESP32 繼電器控制器 + PoE 供電交換機 + 4G 工業路由器。現場僅需供電 110V/220V 與相機網路線即可運作。
+          </p>
+          <div class="text-left text-xs bg-slate-900 p-4 rounded-lg font-mono text-slate-400 space-y-1">
+            <div class="text-amber-400">[Pipeline Status]</div>
+            <div>➔ IP Camera (Snapshot / RTSP) -> Ready</div>
+            <div>➔ Edge AI Inference (InsightFace / YOLO) -> 640x640 Active</div>
+            <div>➔ ESP32-S3-PoE Relay Server -> Connected</div>
+            <div>➔ LINE Push Messaging Gateway -> Online</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 定價方案 Pricing -->
+  <section id="pricing" class="py-20 bg-slate-900/50 border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-white mb-4">透明租賃與建置方案</h2>
+        <p class="text-slate-400 text-sm">提供短期工程月租方案與永久買斷配置，無隱藏維護成本。</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- 方案 1: 月租服務 -->
+        <div class="bg-brand-card p-8 rounded-3xl border-2 border-brand-yellow relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 right-6 bg-brand-yellow text-slate-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+            最受營造廠歡迎
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">工區專案月租方案</h3>
+            <p class="text-slate-400 text-sm mb-6">適合單一工程建案、公共工程標案施工期。</p>
+            <div class="flex items-baseline gap-1 mb-8">
+              <span class="text-4xl font-extrabold text-white">NT$ 15,000</span>
+              <span class="text-slate-400 text-sm">/ 月 (單鏡頭起)</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 標準防雨 AI 邊緣辨識電箱租用</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 人臉辨識門禁 + 電子圍籬功能全開</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> LINE 圖文告警推播（不限綁定人數）</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 4G 工業網卡流量全包</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 每週自動產出科技勞檢違規週報</li>
+            </ul>
+          </div>
+          <a href="https://line.me/ti/p/@你的LINE官方帳號" class="w-full bg-brand-yellow text-slate-900 font-bold py-3 rounded-xl hover:bg-amber-400 transition text-center block">
+            諮詢月租合約
+          </a>
+        </div>
+
+        <!-- 方案 2: 整套買斷 -->
+        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">系統永久買斷配置</h3>
+            <p class="text-slate-400 text-sm mb-6">適合大型自有廠區、常態長期作業之工廠與料場。</p>
+            <div class="flex items-baseline gap-1 mb-8">
+              <span class="text-4xl font-extrabold text-white">專案報價</span>
+              <span class="text-slate-400 text-sm">/ 依場域鏡頭數規劃</span>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 全套工業級電箱主機設備買斷</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 客製化辨識模型部署（怪手/高處/特定設備）</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 本地區網 API 介接企業內部 ERP/門禁</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="text-brand-yellow w-4 h-4"></i> 一年硬體保固與遠端 OTA 升級服務</li>
+            </ul>
+          </div>
+          <a href="https://line.me/ti/p/@你的LINE官方帳號" class="w-full border border-brand-border bg-slate-800 text-white font-bold py-3 rounded-xl hover:bg-slate-700 transition text-center block">
+            索取規劃建議書
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 CTA -->
+  <footer class="border-t border-brand-border py-12 px-6 bg-brand-dark text-center">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-6">
+      <div class="flex items-center gap-2 font-bold text-lg text-white">
+        <i data-lucide="shield-alert" class="text-brand-yellow w-6 h-6"></i>
+        <span>SafeEdge AI 科技勞安系統</span>
+      </div>
+      <p class="text-slate-500 text-xs max-w-md">
+        專為台灣公共工程與各級營造廠提供快速落地的 AI 防災邊緣解決方案。符合工安防護規範與資安非陸資審查要求。
+      </p>
+      <div class="text-slate-600 text-xs">
+        © 2026 SafeEdge AI. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 初始化 Lucide 圖標
+    lucide.createIcons();
+  </script>
+</body>
+</html>
